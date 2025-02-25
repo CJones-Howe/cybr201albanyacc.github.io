@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Second Video Game Related</title>
+<link rel="stylesheet" href="index2.css">
+</head>
+
+
+
+<body>
+<nav class="topnav">
+<ul class="nav-links">
+
+<li><a href=""> Valorant</a></li>
+<li><a href=""> CS 2</a></li>
+<li><a href=""> Rivals</a></li>
+</ul>
+
+</ul>
+</nav>
+</body>
+
+
+
+</html>
