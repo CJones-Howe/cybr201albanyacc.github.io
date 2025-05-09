@@ -1,51 +1,87 @@
 <!DOCTYPE html>
-<html>
-
-
-
-
-
+<html lang="en">
 <head>
-<title>Video Game Related</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Favorite Games</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #a8e6a1, #1b5e20); /* Gradient from light green to dark green */
+      text-align: center;
+    }
+
+    h1 {
+      padding: 40px 0;
+      font-size: 36px;
+      background-color: #222;
+      color: white;
+      margin: 0;
+    }
+
+    .game-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .game-tile {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .game-tile img {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .game-tile:hover img {
+      transform: scale(1.03);
+    }
+
+    .game-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 12px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      font-size: 24px;
+      text-align: center;
+    }
+  </style>
 </head>
-
-<h1 style="color:blue">THIS IS BIG HEADER<h1>
 <body>
-  
-<img src = "game photo.jpg"</img>
 
-<h2 style="color:green"> Game related 1 </h2>
-<a href = "https://www.google.com/search?q=video+games&oq=video+games&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAtIBCDI2ODJqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8">GAME SEARCH</a>
-<p style="color:red">This is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraph
+<h1>My Favorite Games</h1>
 
-<ol>
-<li> Valorant</li>
-<li> Cs 2</li>
-<li> Rivals</li>
-</ol>
+<div class="game-list">
+  <a href="valorant.html" class="game-tile">
+    <img src="valorant.jpg" alt="Valorant">
+    <div class="game-label">Valorant</div>
+  </a>
 
-<h2 style="color:orange"> Game related 2 </h2>
-<a href = "https://www.google.com/search?q=video+games&oq=video+games&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAtIBCDI2ODJqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8">GAME SEARCH</a>
-<p style="color:red">This is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraph
+  <a href="cs2.html" class="game-tile">
+    <img src="cs2.jpg" alt="Counter-Strike 2">
+    <div class="game-label">Counter-Strike 2</div>
+  </a>
 
-<ol>
-<li> Valorant</li>
-<li> Cs 2</li>
-<li> Rivals</li>
-</ol>
-
-<h2 style="color:purple"> Game related 3 </h2>
-<a href = "https://www.google.com/search?q=video+games&oq=video+games&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAtIBCDI2ODJqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8">GAME SEARCH</a>
-<p style="color:red">This is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraphThis is test paragraph
-
-<ol>
-<li> Valorant</li>
-<li> Cs 2</li>
-<li> Rivals</li>
-</ol>
+  <a href="marvel-rivals.html" class="game-tile">
+    <img src="marvel-rivals.jpg" alt="Marvel Rivals">
+    <div class="game-label">Marvel Rivals</div>
+  </a>
+</div>
 
 </body>
-
-
-
 </html>
