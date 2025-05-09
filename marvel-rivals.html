@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marvel Rivals</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #2d3436;
+      color: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #e74c3c, #c0392b);
+      padding: 30px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    .content {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section {
+      background-color: #34495e;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+
+    .section h2 {
+      margin: 0;
+      padding: 15px 20px;
+      cursor: pointer;
+      background-color: #2c3e50;
+      color: #e74c3c;
+      font-size: 22px;
+      transition: background-color 0.3s ease;
+    }
+
+    .section h2:hover {
+      background-color: #2d3436;
+    }
+
+    .section-content {
+      padding: 20px;
+      display: none;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .section-content.show {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 15px;
+      color: #888;
+      font-size: 14px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #e74c3c;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      display: inline-block;
+      font-size: 16px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .home-button:hover {
+      background-color: #c0392b;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Marvel Rivals</h1>
+    <p>Battle as your favorite Marvel heroes in a strategic, third person hero based competitive game similar to Overwatch.</p>
+  </header>
+
+  <div class="content">
+    <div class="section">
+      <h2 onclick="toggleSection(this)">Overview</h2>
+      <div class="section-content">
+        <p><strong>Marvel Rivals</strong> lets players dive into the Marvel universe, taking control of iconic heroes and villains. Join your team and face off against other players in a 6v6 fashion with strategic battles where only the best win.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 onclick="toggleSection(this)">Gameplay</h2>
+      <div class="section-content">
+        <p>Marvel Rivals focuses on team-based combat, emphasizing synergy, special abilities, and strategic coordination. Every player and role must work together to succeed. Players can choose from three distinct roles, each with its own strengths and weaknesses. Duelists excel at dealing high damage and securing eliminations. Vanguards are great at absorbing damage and leading the frontline. Strategists, also known as Supports, are essential to the team by healing and helping allies recover from damage. Teamwork and coordination are key to winning in Marvel Rivals.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 onclick="toggleSection(this)">Community</h2>
+      <div class="section-content">
+        <p>Marvel Rivals has a passionate community of comic book lovers, gamers, and Marvel fans. With frequent events, updates, and competitive challenges, there's always new gamemodes and battles to experience.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="index.html" class="home-button">Home</a>
+  </footer>
+
+  <script>
+    function toggleSection(header) {
+      const content = header.nextElementSibling;
+      content.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>

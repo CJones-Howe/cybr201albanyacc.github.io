@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Valorant</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0f1923;
+      color: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #e63946, #ff7f50);
+      padding: 30px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    .content {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section {
+      background-color: #1e2a35;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+
+    .section h2 {
+      margin: 0;
+      padding: 15px 20px;
+      cursor: pointer;
+      background-color: #253545;
+      color: #ff6b6b;
+      font-size: 22px;
+      transition: background-color 0.3s ease;
+    }
+
+    .section h2:hover {
+      background-color: #2f445c;
+    }
+
+    .section-content {
+      padding: 20px;
+      display: none;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .section-content.show {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 15px;
+      color: #888;
+      font-size: 14px;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #e63946;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      display: inline-block;
+      font-size: 16px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .home-button:hover {
+      background-color: #ff7f50;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Valorant</h1>
+    <p>Explore Riot’s competitive tactical shooter which is also my favorite game of the bunch. :)</p>
+  </header>
+
+  <div class="content">
+    <div class="section">
+      <h2 onclick="toggleSection(this)">Overview</h2>
+      <div class="section-content">
+        <p><strong>Valorant</strong> is a 5v5 tactical shooter developed by Riot Games. Released in 2020, with a beta that essentially took over twitch, it mixes classic FPS gunplay with unique agent abilities, creating a fast-paced, strategic gaming experience. Players choose from a roster of agents, each with distinct powers, to either plant or defuse the Spike!</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 onclick="toggleSection(this)">Gameplay</h2>
+      <div class="section-content">
+        <p>Rounds in Valorant are won through sharp aim and smart team play. Each agent has unique utility that can change the battle in an instant. Smokes, flashes, drones, and more, that can be used to control the map and gain an advantage on your enemy. Whether you're an aggressive fragger or a supportive controller, there's a role for every style of play.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 onclick="toggleSection(this)">Community</h2>
+      <div class="section-content">
+        <p>Valorant’s community includes casual players, ranked grinders, streamers, and pro teams. Riot regularly hosts official tournaments, and the Valorant Champions Tour (VCT) highlights top-tier competitive play worldwide. Content creators, fan art, and agent cosplay also thrive in the game's passionate community.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="index.html" class="home-button">Home</a>
+  </footer>
+
+  <script>
+    function toggleSection(header) {
+      const content = header.nextElementSibling;
+      content.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
